@@ -163,6 +163,11 @@
     font-style: italic;
     color: var(--main-red);
   }
+.profile-pic {
+    border: 1px transparent #000;
+    border-radius: 60%;
+    float: right;
+}
   
   /* Projects section */
   
