@@ -142,4 +142,6 @@ img {
 .profile-pic {
     border: 1px transparent #000;
     border-radius: 60%;
-    display
+    display: flex;
+    flex-directiom: row;
+}
