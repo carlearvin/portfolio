@@ -277,6 +277,18 @@ img {
   font-style: italic;
   color: var(--main-red);
 }
+    .profile {
+  display: flex;
+  align-items: center; /* This centers the H1 element vertically */
+}
+
+.profile-pic {
+  float: left; /* This floats the image to the left */
+  margin-right: 2rem; /* This adds margin between the image and the H1 element */
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border-radius: 50%; /* This creates a circular profile picture */
+}
 
 /* Projects section */
 
