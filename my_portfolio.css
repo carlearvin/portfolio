@@ -163,6 +163,22 @@ img {
   font-style: italic;
   color: var(--main-red);
 }
+.profile {
+  display: flex;
+  align-items: center; /* Aligns the H1 element vertically beside the image */
+  margin-bottom: 1.5rem; /* Adds some space below the profile section */
+}
+
+.profile-pic {
+  width: 150px; /* Sets the width of the profile image */
+  height: 150px; /* Sets the height of the profile image */
+  border-radius: 50%; /* Creates a circular profile image */
+  margin-right: 2rem; /* Adds margin to the right of the image */
+}
+
+.welcome-section > h1 {
+  font-size: 3rem; /* Adjust the font size of the H1 element as needed */
+}
 
 /* Projects section */
 
