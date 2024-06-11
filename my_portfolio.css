@@ -179,7 +179,21 @@ img {
 .welcome-section > h1 {
   font-size: 3rem; /* Adjust the font size of the H1 element as needed */
 }
+.certificate {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    margin: 5px;
+}
+.resume {
+  font-size: 2rem;
+  background: var(--main-gray);
+  transition: background 0.3s ease-out;
+}
 
+.resume:hover {
+  background: var(--main-red);
+}
 /* Projects section */
 
 .projects-section {
