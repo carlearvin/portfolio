@@ -192,6 +192,15 @@ img {
 
 .resume:hover {
   background: var(--main-red);
+  animation-name: slideLeft;
+  animation-duration: 2s;
+}
+
+@keyframes slideLeft {
+  to{
+    transform: translateX(50px);
+    
+  }
 }
 /* Projects section */
 
