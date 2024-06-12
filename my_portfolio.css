@@ -65,10 +65,6 @@ html {
     font-size: 55%;
   }
 }
-@media screen and (max-width: 600px){
-  aside, section, article {
-    width: 100%;
-  }
 /* Base styles */
 
 body {
