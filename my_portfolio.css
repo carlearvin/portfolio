@@ -107,7 +107,7 @@ img {
 
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
   top: 0;
   left: 0;
@@ -139,8 +139,7 @@ img {
 }
 
 .nav-list a:hover {
-  background: var(--main-blue);
-}
+  background: var(--main-blu
 
 /* Welcome section */
 
