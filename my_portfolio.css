@@ -1,3 +1,4 @@
+/* Custom properties/variables  */
 :root {
   --main-white: #ffffff; /* Pure white for maximum contrast */
   --main-red: #e63946;   /* A slightly brighter, more vibrant red */
@@ -64,6 +65,7 @@ html {
     font-size: 55%;
   }
 }
+
 /* Base styles */
 
 body {
@@ -139,7 +141,8 @@ img {
 }
 
 .nav-list a:hover {
-  background: var(--main-blu
+  background: var(--main-blue);
+}
 
 /* Welcome section */
 
@@ -152,8 +155,8 @@ img {
   height: 100vh;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  animation: gradientShift 30s infinite;
 }
-
 .welcome-section > p {
   font-size: 3rem;
   font-weight: 200;
@@ -167,8 +170,8 @@ img {
 }
 
 .profile-pic {
-  width: 300px; /* Sets the width of the profile image */
-  height: 300px; /* Sets the height of the profile image */
+  width: 150px; /* Sets the width of the profile image */
+  height: 150px; /* Sets the height of the profile image */
   border-radius: 50%; /* Creates a circular profile image */
   margin-right: 2rem; /* Adds margin to the right of the image */
 }
@@ -190,12 +193,12 @@ img {
 
 .resume:hover {
   background: var(--main-red);
-  animation-name: growUp;
+  animation-name: grow;
   animation-duration: 2s;
 }
 
-@keyframes growUp {
-  from{
+@keyframes grow {
+  50%{
     transform: scale(0.9);
     
   }
