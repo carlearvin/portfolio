@@ -104,5 +104,55 @@
     </a>
   </p>
 </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+              anchor.addEventListener
+              ('click', function(e) {
+              e.preventDefault();
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+              });
+              });
+              });
+              
+              // Active navigation link highlighting
+              const sections = document.querySelectorAll('section');
+              const navLi = document.querySelectorAll('nav .nav-list li');
+              
+              window.addEventListener('scroll', () => {
+                let current = '';
+              
+                sections.forEach(section => {
+                  const sectionTop = section.offsetTop;
+                  const sectionHeight = section.clientHeight;
+                  if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute('id');
+                  }
+                });
+              
+                navLi.forEach(li => {
+                  li.classList.remove('active');
+                  if (li.querySelector('a').getAttribute('href').includes(current)) {
+                    li.classList.add('active');
+                  }
+                });
+              });
+              
+              // Show/hide more projects
+              const showMoreBtn = document.getElementById('show-more-projects');
+              showMoreBtn.addEventListener('click', function() {
+              const additionalProjects = document.querySelectorAll('.project.project-tile.additional');
+              additionalProjects.forEach(project => {
+                project.classList.toggle('hidden');
+              });
+              
+              showMoreBtn.textContent = showMoreBtn.textContent.includes('Show all') ? 'Show less' : 'Show all';
+              showMoreBtn.querySelector('i').classList.toggle('fa-chevron-right');
+              showMoreBtn.querySelector('i').classList.toggle('fa-chevron-down');
+              });
+              });
+              </script>
 </body>
 </html>
