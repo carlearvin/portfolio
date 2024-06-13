@@ -169,8 +169,8 @@ img {
 }
 
 .profile-pic {
-  width: 150px; /* Sets the width of the profile image */
-  height:150px; /* Sets the height of the profile image */
+  width: 300px; /* Sets the width of the profile image */
+  height: 300px; /* Sets the height of the profile image */
   border-radius: 50%; /* Creates a circular profile image */
   margin-right: 2rem; /* Adds margin to the right of the image */
 }
