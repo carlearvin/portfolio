@@ -196,7 +196,7 @@ img {
 }
 
 @keyframes growUp {
-  to{
+  from{
     transform: scale(0.9);
     
   }
