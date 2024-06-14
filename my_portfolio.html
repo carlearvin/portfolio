@@ -29,9 +29,9 @@
 <section id="welcome-section" class="welcome-section">
   <div class="profile">
     <img src="image/resume_pic.jpeg" alt="Carl" class="profile-pic">
-    <h1>Hi, I'm Carl Earvin</h1>
+    <h1 id="headline" class="headline">Hi, I'm Carl Earvin</h1>
   </div>
-  <p>Web Developer in the Making</p>
+  <p id="subheadline" class="subheadline">Web Developer in the Making</p>
   <a href="https://www.freecodecamp.org/certification/nonapogi/responsive-web-design" target="_blank"><div class="certificate resume">Certificates</div>
 </a><div class="certificate resume">Resume</div>
 </section>
@@ -153,6 +153,33 @@
               showMoreBtn.querySelector('i').classList.toggle('fa-chevron-down');
               });
               });
+      document.addEventListener("DOMContentLoaded", function() {
+    function typeWriter(element, text, delay = 100) {
+      let i = 0;
+
+      function type() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, delay);
+        }
+      }
+      type();
+    }
+
+    const headline = document.getElementById("headline");
+    const subheadline = document.getElementById("subheadline");
+
+    // Clear initial text
+    headline.innerHTML = "";
+    subheadline.innerHTML = "";
+
+    // Start typing effect
+    typeWriter(headline, "I'm Carl Earvin Nonacido", 100);
+    setTimeout(() => {
+      typeWriter(subheadline, "Web Developer in the Making", 100);
+    }, 3000); // Adjust the delay before starting the second typing effect
+  });
               </script>
 </body>
 </html>
