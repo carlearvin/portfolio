@@ -105,6 +105,21 @@ img {
   width: 100%;
 }
 
+.headline, .subheadline {
+  border-right: .15em solid var(--main-red);
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+.headline {
+  font-size: 2em;
+  margin: 0;
+}
+.subheadline {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+}
+
 /* nav */
 
 .nav {
